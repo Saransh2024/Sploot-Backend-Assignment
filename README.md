@@ -1,5 +1,7 @@
 # Sploot-Backend-Assignment
 
+Server hosted on render- https://sploot-backend-712b.onrender.com
+
 ## Backend RESTful API in NodeJS with ExpressJS and MongoDB 
 
 This service should have a user who will be able to signup and login. 
