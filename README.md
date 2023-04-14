@@ -1,6 +1,7 @@
 # Backend RESTful API in NodeJS with ExpressJS and MongoDB 
 
-This service should have a user who will be able to signup and login. Only The authenticated (logged in) user will be able to perform actions like creating an Article, Retrieving all Articles and updating their own user profile.
+This service should have a user who will be able to signup and login. 
+Only the authenticated (logged in) user will be able to perform actions like creating an Article, Retrieving all Articles and updating their own user profile.
 
 
 ➡️Signup a user with email and password.
@@ -10,24 +11,24 @@ This service should have a user who will be able to signup and login. Only The a
 
 ➡️Login a user with email and password.
 
-       Endpoint: /api/login
-       Request body: { email: string, password: string }
+    Endpoint: /api/login
+    Request body: { email: string, password: string }
 
 ➡️Create an article.
 
-            Endpoint: /api/users/:userId/articles
-            Request body: { title: string, description: string }
+     Endpoint: /api/users/:userId/articles
+     Request body: { title: string, description: string }
 
 
 ➡️Get all articles.
 
-            Endpoint: /api/articles
+     Endpoint: /api/articles
             
 
 ➡️Update user profile. Only name and age are editable.
 
-               Endpoint: /api/users/:userId
-               Request body: { name: string, age: number }
+     Endpoint: /api/users/:userId
+     Request body: { name: string, age: number }
 
 
 
