@@ -5,8 +5,8 @@ This service should have a user who will be able to signup and login. Only The a
 
 ➡️Signup a user with email and password.
 
-   Endpoint: /api/signup
-   Request body: { email: string, password: string, name: string, age: number }
+    Endpoint: /api/signup
+    Request body: { email: string, password: string, name: string, age: number }
 
 ➡️Login a user with email and password.
 
