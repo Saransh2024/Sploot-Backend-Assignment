@@ -1,4 +1,6 @@
-# Backend RESTful API in NodeJS with ExpressJS and MongoDB 
+# Sploot-Backend-Assignment
+
+## Backend RESTful API in NodeJS with ExpressJS and MongoDB 
 
 This service should have a user who will be able to signup and login. 
 Only the authenticated (logged in) user will be able to perform actions like creating an Article, Retrieving all Articles and updating their own user profile.
@@ -44,4 +46,4 @@ JWT_SECRET=
 
   
 # Sploot-Backend-Assignment
-# Sploot-Backend-Assignment
+
