@@ -1,62 +1,46 @@
-# Node.js RESTful API with MongoDB and User Authentication
+# Backend RESTful API in NodeJS with ExpressJS and MongoDB 
 
-This repository contains an implementation of a Node.js RESTful API using Express.js and MongoDB for data storage. 
-The API provides user authentication, allowing only authenticated users to create articles, retrieve all articles and update their own user profile.
+This service should have a user who will be able to signup and login. Only The authenticated (logged in) user will be able to perform actions like creating an Article, Retrieving all Articles and updating their own user profile.
 
-Features
-Signup a user with email and password.
 
-      Endpoint: /api/signup
-Request body: { email: string, password: string, name: string, age: number }
+➡️Signup a user with email and password.
 
-Login a user with email and password.
+   Endpoint: /api/signup
+   Request body: { email: string, password: string, name: string, age: number }
+
+➡️Login a user with email and password.
 
        Endpoint: /api/login
-Request body: { email: string, password: string }
-Response body: { message: string, token: string }
+       Request body: { email: string, password: string }
 
-Create an article.
+➡️Create an article.
 
             Endpoint: /api/users/:userId/articles
-Request body: { title: string, description: string }
-Response body: { message: string, article: object }
+            Request body: { title: string, description: string }
 
-Get all articles.
+
+➡️Get all articles.
 
             Endpoint: /api/articles
-Response body: [{ title: string, description: string, author: { name: string, age: number } }]
+            
 
-Update user profile. Only name and age are editable.
+➡️Update user profile. Only name and age are editable.
 
                Endpoint: /api/users/:userId
-Request body: { name: string, age: number }
-Response body: { message: string, user: object }
+               Request body: { name: string, age: number }
 
-# Technologies Used
-Node.js
-Express.js
-MongoDB
-JSON Web Tokens (JWT)
-bcrypt
-Getting Started
 
-# Clone the repository: 
-git clone https://github.com/<your-username>/nodejs-mongodb-restful-api.git
-  
-Install dependencies: npm install
-Start the server: npm start
-  
-  
- Next, create a .env file in the root directory and add the following environment variables:
 
-makefile
-Copy code
-MONGODB_URI=<mongodb_connection_uri>
-JWT_SECRET=<jwt_secret_key>
-Replace <mongodb_connection_uri> with the connection URI for your MongoDB database and <jwt_secret_key> with a secret key for JWT authentication.
+# Getting Started
   
-Use a tool like Postman to make requests to the API.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Create a .env file in the root directory
+
+Enter the following details in it
+
+MONGODB_URI=
+
+JWT_SECRET=
+
+  
 # Sploot-Backend-Assignment
 # Sploot-Backend-Assignment
